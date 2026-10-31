@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile name=""/>
+
+  <group name="Pills">
+    <entry name="showWired" type="Bool"><default>true</default></entry>
+    <entry name="showBluetooth" type="Bool"><default>true</default></entry>
+    <entry name="showWifi" type="Bool"><default>true</default></entry>
+    <entry name="showVpn" type="Bool"><default>true</default></entry>
+    <entry name="showPower" type="Bool"><default>true</default></entry>
+    <entry name="showFan" type="Bool"><default>true</default></entry>
+    <entry name="showNightLight" type="Bool"><default>true</default></entry>
+    <entry name="showAwake" type="Bool"><default>true</default></entry>
+    <entry name="showAirplane" type="Bool"><default>true</default></entry>
+    <entry name="showKdeConnect" type="Bool"><default>true</default></entry>
+    <!-- true: the pill toggles and the arrow opens its panel (GNOME's way round). -->
+    <entry name="bodyToggles" type="Bool"><default>true</default></entry>
+  </group>
+
+  <group name="Appearance">
+    <entry name="pillPadding" type="Int"><default>9</default><min>4</min><max>22</max></entry>
+    <entry name="pillRadius" type="Int"><default>22</default><min>0</min><max>30</max></entry>
+    <entry name="pillIconSize" type="Int"><default>18</default><min>12</min><max>32</max></entry>
+    <entry name="pillSpacing" type="Int"><default>8</default><min>0</min><max>20</max></entry>
+    <entry name="useThemeAccent" type="Bool"><default>true</default></entry>
+    <entry name="customAccent" type="Color"><default>#ff7139</default></entry>
+    <!-- auto | dark | light -->
+    <entry name="textContrast" type="String"><default>auto</default></entry>
+    <!-- Keep the popup clear of the panel and the screen edge, borders intact. -->
+    <entry name="floatingPopup" type="Bool"><default>true</default></entry>
+  </group>
+
+  <group name="Sliders">
+    <entry name="showVolume" type="Bool"><default>true</default></entry>
+    <entry name="showBrightness" type="Bool"><default>true</default></entry>
+    <entry name="showMonitorContrast" type="Bool"><default>true</default></entry>
+  </group>
+
+  <group name="Panel">
+    <entry name="panelShowBatteryIcon" type="Bool"><default>true</default></entry>
+    <entry name="panelShowPercentage" type="Bool"><default>true</default></entry>
+  </group>
+
+  <group name="Behaviour">
+    <entry name="animatePanels" type="Bool"><default>true</default></entry>
+    <entry name="animationDuration" type="Int"><default>170</default><min>0</min><max>600</max></entry>
+  </group>
+</kcfg>

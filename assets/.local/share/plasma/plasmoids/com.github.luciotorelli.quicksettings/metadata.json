@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Lúcio Torelli"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Quick settings and KDE Connect in one panel",
+        "Icon": "preferences-system",
+        "Id": "com.github.luciotorelli.quicksettings",
+        "Name": "Quick Settings",
+        "Version": "0.1.0",
+        "Website": "https://github.com/luciotorelli/quicksettings-plasma"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

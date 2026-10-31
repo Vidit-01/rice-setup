@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [{ "Name": "Vidit" }],
+        "Category": "Development Tools",
+        "Description": "See active Codex, Claude Code, Cursor, and Antigravity sessions",
+        "Icon": "code-context",
+        "Id": "com.vidit.agentpanel",
+        "Name": "Agent Panel",
+        "Version": "0.19.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

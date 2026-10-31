@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+  <kcfgfile/>
+  <group name="General">
+    <entry name="dockPosition" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="maxScale" type="Double">
+      <default>1.45</default>
+    </entry>
+    <entry name="zoomRadius" type="Int">
+      <default>70</default>
+    </entry>
+    <entry name="iconSize" type="Int">
+      <default>44</default>
+    </entry>
+    <entry name="dockMargin" type="Int">
+      <default>16</default>
+    </entry>
+    <entry name="dockCrossMargin" type="Int">
+      <default>5</default>
+    </entry>
+    <entry name="screenEdgeMargin" type="Int">
+      <default>8</default>
+    </entry>
+    <entry name="backgroundOpacity" type="Double">
+      <default>0.55</default>
+    </entry>
+    <entry name="useThemeBackground" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="customBackgroundColor" type="Color">
+      <default>#20242b</default>
+    </entry>
+    <entry name="cornerRadius" type="Int">
+      <default>12</default>
+    </entry>
+    <entry name="borderOpacity" type="Double">
+      <default>0.22</default>
+    </entry>
+    <entry name="shadowOpacity" type="Double">
+      <default>0.42</default>
+    </entry>
+    <entry name="showHighlight" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="enableBlur" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="hideOnMaximized" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="launchAnimation" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="magnificationSpring" type="Double">
+      <default>50.0</default>
+    </entry>
+    <entry name="magnificationDamping" type="Double">
+      <default>1.0</default>
+    </entry>
+    <entry name="clickBounceHeight" type="Int">
+      <default>4</default>
+    </entry>
+    <entry name="launchBounceHeight" type="Int">
+      <default>8</default>
+    </entry>
+    <entry name="dockRevealDuration" type="Int">
+      <default>140</default>
+    </entry>
+    <entry name="dockHideDuration" type="Int">
+      <default>160</default>
+    </entry>
+    <entry name="appGroupPopupDuration" type="Int">
+      <default>180</default>
+    </entry>
+    <entry name="appGroupPopupOvershoot" type="Double">
+      <default>1.35</default>
+    </entry>
+    <entry name="folderHoverScale" type="Double">
+      <default>1.06</default>
+    </entry>
+    <entry name="showFolderView" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="folderUrl" type="String">
+      <default></default>
+    </entry>
+    <entry name="folderViewMode" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="autoOpenFolderWithOpenDocument" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="autoOpenAppGroupWithRunningApp" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="appGroupViewMode" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="folderUrls" type="StringList"/>
+    <entry name="showTrash" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showRemovableVolumes" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="openRemovableVolumesInNewTab" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="showDesktopSwitcher" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="desktopSwitcherPosition" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="desktopSwitcherLabelMode" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="showPowerButton" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="powerButtonPosition" type="Int">
+      <default>1</default>
+    </entry>
+    <entry name="showProgressIndicators" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="showKdeConnectRecentShares" type="Bool">
+      <default>true</default>
+    </entry>
+    <!--
+      Each entry is a versioned JSON object. Keeping groups separate from the
+      TaskManager launcher list preserves Plasma's native task activation and
+      window tracking while allowing several launcher rows to share one visual
+      Dock slot.
+    -->
+    <entry name="appGroups" type="StringList"/>
+    <entry name="launchers" type="StringList"/>
+  </group>
+</kcfg>
