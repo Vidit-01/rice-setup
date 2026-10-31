@@ -6,6 +6,16 @@ JetBrains Mono settings, wallpaper, and the installed Plasma widgets. Agent
 Panel and Quick Settings are copied from their editable project packages so
 their local customizations are retained.
 
+## Screenshots
+
+![Desktop overview](screenshots/desktop.png)
+
+![Quick Settings widget](screenshots/quick-settings.png)
+
+![Agent Panel widget](screenshots/agent-panel.png)
+
+![Terminal theme](screenshots/terminal.png)
+
 ## Install
 
 From this directory, run:
@@ -29,14 +39,15 @@ The app manifests include the user applications found in the apt and snap
 inventories. `packages/apt-manual.txt` records all manually marked apt packages;
 the installer does not try to restore system packages, kernels, or GPU drivers
 from that full inventory. No Flatpak apps were installed when this bundle was
-captured. Cisco Packet Tracer was not available as an installable package, so
-its launchers are included but its AppImage must be obtained from Cisco.
+captured.
 
 ## Contents
 
 - `config/.config/`: KDE shortcuts, input, window manager, Plasma, application,
-  and GTK settings.
+  GTK, Neovim, Yazi, fontconfig, and other app settings.
+- `config/home/`: Bash startup files and NVIDIA settings.
 - `assets/.local/share/`: active theme, icon set, wallpaper, and panel widgets.
+- `screenshots/`: current desktop and widget previews.
 - `packages/`: apt and snap app manifests plus the full apt manual-package list.
 - `install.sh`: installer with backups before replacing existing settings.
 
@@ -49,8 +60,9 @@ The snapshot includes `kglobalshortcutsrc` for shortcuts and the KDE input,
 KWin, Plasma, notification, Dolphin, Konsole, Spectacle, and System Monitor
 settings. It also includes the saved monitor output configuration; review it
 on a different display or laptop. It excludes credentials, browser profiles,
-email settings, usage history, and other account data. Paths in the Plasma
-layout are rewritten for the account running the installer.
+email settings, Git identity, usage history, and other account data. Bash paths
+are portable across usernames, and paths in the Plasma layout are rewritten
+for the account running the installer.
 
 ## Third-party components
 

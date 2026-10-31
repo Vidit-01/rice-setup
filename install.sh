@@ -150,6 +150,23 @@ install_config_file mimeapps.list
 install_config_file gtkrc
 install_config_file gtkrc-2.0
 
+install_home_file() {
+    local name="$1"
+    local source="$SCRIPT_DIR/config/home/$name"
+    local target="$HOME_DIR/$name"
+    [[ -f "$source" ]] || return 0
+    if [[ -e "$target" ]] && cmp -s -- "$source" "$target"; then
+        return 0
+    fi
+    backup_existing "$target"
+    install -m 0644 "$source" "$target"
+}
+
+install_home_file .bashrc
+install_home_file .bash_logout
+install_home_file .profile
+install_home_file .nvidia-settings-rc
+
 install_config_tree() {
     local name="$1"
     local source="$SCRIPT_DIR/config/.config/$name"
@@ -167,6 +184,11 @@ install_config_tree gtk-3.0
 install_config_tree gtk-4.0
 install_config_tree tiling-assistant
 install_config_tree kdedefaults
+install_config_tree nvim
+install_config_tree yazi
+install_config_tree fontconfig
+install_config_tree xsettingsd
+install_config_tree ghostty
 
 install_asset_tree() {
     local relative="$1"
@@ -209,8 +231,6 @@ install_launcher() {
 
 install_launcher brave_brave.desktop
 install_launcher gmail.desktop
-install_launcher CiscoPacketTracer-9.0.1.desktop
-install_launcher CiscoPacketTracerPtsa-9.0.1.desktop
 
 if command -v kbuildsycoca6 >/dev/null 2>&1; then
     kbuildsycoca6 --noincremental >/dev/null 2>&1 || true
@@ -219,4 +239,3 @@ fi
 printf '\nRice files installed. Existing files are backed up under:\n%s\n' "$BACKUP_ROOT"
 printf 'Log out and back in to apply KDE settings, shortcuts, panel layout, and theme fully.\n'
 printf 'Review kwinoutputconfig.json if the new system has different displays or a different monitor layout.\n'
-printf 'Cisco Packet Tracer itself must be downloaded and installed separately; its launchers are included.\n'
