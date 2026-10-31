@@ -14,24 +14,30 @@ From this directory, run:
 ./install.sh
 ```
 
-The script installs `kde-plasma-desktop` and `fonts-jetbrains-mono` with apt if
-they are missing, then copies the rice files into your home directory. It saves
-any existing files it replaces under
+The script installs KDE Plasma, JetBrains Mono, the listed apt applications,
+and the listed snaps if they are missing, then restores the settings and assets.
+It saves any existing files it replaces under
 `~/.local/state/rice-setup/backups/<timestamp>/`. Log out and back in after it
-finishes.
+finishes. It warns and skips app packages that are unavailable from the new
+system's configured repositories.
 
-Use `./install.sh --skip-packages` if Plasma 6 and JetBrains Mono are already
-installed or if you use a different distribution.
+Use `./install.sh --skip-packages` to restore settings and assets only, or
+`./install.sh --skip-apps` to install Plasma but skip the app lists. Automatic
+package installation supports Ubuntu and Debian.
 
-The saved Plasma panel has launchers for a web browser, Ghostty, and Visual
-Studio Code. Install those applications separately if you want all three
-launchers to work. The panel layout is based on a single 1920x1080 display;
-review it in System Settings if your display arrangement differs.
+The app manifests include the user applications found in the apt and snap
+inventories. `packages/apt-manual.txt` records all manually marked apt packages;
+the installer does not try to restore system packages, kernels, or GPU drivers
+from that full inventory. No Flatpak apps were installed when this bundle was
+captured. Cisco Packet Tracer was not available as an installable package, so
+its launchers are included but its AppImage must be obtained from Cisco.
 
 ## Contents
 
-- `config/.config/`: selected KDE and GTK appearance and panel configuration.
+- `config/.config/`: KDE shortcuts, input, window manager, Plasma, application,
+  and GTK settings.
 - `assets/.local/share/`: active theme, icon set, wallpaper, and panel widgets.
+- `packages/`: apt and snap app manifests plus the full apt manual-package list.
 - `install.sh`: installer with backups before replacing existing settings.
 
 The saved panel layout uses Agent Panel and Quick Settings. The other installed
@@ -39,10 +45,12 @@ widgets are restored into Plasma's widget list but are not added to the panel.
 The applet configuration in the layout file preserves the current placement,
 popup dimensions, and Agent Panel shortcut.
 
-The config snapshot intentionally leaves out account credentials, browser
-profiles, email settings, monitor output configuration, and other application
-data. Paths in the Plasma layout are rewritten for the account running the
-installer.
+The snapshot includes `kglobalshortcutsrc` for shortcuts and the KDE input,
+KWin, Plasma, notification, Dolphin, Konsole, Spectacle, and System Monitor
+settings. It also includes the saved monitor output configuration; review it
+on a different display or laptop. It excludes credentials, browser profiles,
+email settings, usage history, and other account data. Paths in the Plasma
+layout are rewritten for the account running the installer.
 
 ## Third-party components
 

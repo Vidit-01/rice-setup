@@ -1,0 +1,2 @@
+Cisco Packet Tracer: launcher files are included. Its AppImage was not present under /opt/pt when captured; obtain and install it from Cisco Networking Academy.
+Gmail: included as a Brave web-app launcher; Brave is listed in snap-apps.tsv.

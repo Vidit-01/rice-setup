@@ -1,0 +1,19 @@
+[General]
+autoSaveImage=true
+clipboardGroup=PostScreenshotCopyImage
+
+[GuiConfig]
+quitAfterSaveCopyExport=true
+
+[ImageSave]
+imageCompressionQuality=100
+lastImageSaveAsLocation=file:///home/vidit/rice-setup/public/Screenshot_20261031_163954.png
+lastImageSaveLocation=file:///home/vidit/rice-setup/public/Screenshot_20261031_163954.png
+translatedScreenshotsFolder=Screenshots
+
+[VideoSave]
+translatedScreencastsFolder=Screencasts
+
+[ViewerWindow]
+1920x1080 screen: Height=945
+1920x1080 screen: Width=1902

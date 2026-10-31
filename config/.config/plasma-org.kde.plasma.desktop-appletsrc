@@ -125,7 +125,7 @@ AppletOrder=137;135;156;138;164;167;165;166
 [Containments][161]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=
+activityId=4aca5b2c-271a-42d7-bdc6-13777077d290
 formfactor=0
 immutability=1
 lastScreen=0
@@ -139,8 +139,8 @@ DialogWidth=810
 
 [Containments][161][Wallpaper][org.kde.image][General]
 DynamicMode=2
-Image=file://@HOME@/.local/share/rice-setup/wallpapers/0011.jpg
-SlidePaths=@HOME@/.local/share/rice-setup/wallpapers/,/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
+Image=file://@HOME@/Pictures/0011.jpg
+SlidePaths=@HOME@/.local/share/wallpapers/,/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=

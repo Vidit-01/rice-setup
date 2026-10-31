@@ -1,0 +1,6 @@
+# snap-name	channel	flags
+brave	latest/stable	-
+code	latest/stable	classic
+firefox	latest/stable	-
+snap-store	2/stable	-
+thunderbird	stable	-

@@ -1,0 +1,1 @@
+# No Flatpak applications were installed when this inventory was captured.

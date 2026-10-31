@@ -1,0 +1,15 @@
+[Applications][brave_brave]
+Seen=true
+
+[Applications][com.mitchellh.ghostty]
+Seen=true
+
+[Applications][org.gnome.Ptyxis]
+Seen=true
+
+[Applications][thunderbird_thunderbird]
+Seen=true
+
+[Notifications]
+LowPriorityHistory=true
+ShowPopupTimeout=false

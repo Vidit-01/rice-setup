@@ -1,0 +1,9 @@
+[Libinput][1267][12826][ELAN0788:00 04F3:321A Touchpad]
+DisableEventsOnExternalMouse=false
+DisableWhileTyping=false
+Enabled=false
+NaturalScroll=true
+ScrollFactor=0.5
+
+[Libinput][1578][16641][MOSART Semi. 2.4G Keyboard Mouse]
+NaturalScroll=false
